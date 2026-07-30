@@ -34,8 +34,8 @@ const Page = () => {
                   className="flex justify-center sm:justify-start"
                 >
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-sos-300x150-v6YVSrckGBELDRR7KZXk0Mnh0cU9tz.png"
-                    alt="Logo SOS Assistência Técnica e Refrigeração"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-souza-CQb0GhRKWotKpAbyxTCkdQ5oJhXKuL.png"
+                    alt="Logo Souza Manutenção"
                     className="w-48 sm:w-56 h-auto drop-shadow-lg"
                   />
                 </motion.div>
