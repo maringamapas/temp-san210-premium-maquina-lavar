@@ -43,7 +43,7 @@ const Page = () => {
                   <h1 
                     className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight max-w-2xl text-center sm:text-left text-foreground tracking-tight"
                   >
-                    Especialistas em <span style={{ color: dadosCliente.cores.primaryColor }}>Refrigeração</span>
+                    Especialistas em <span style={{ color: dadosCliente.cores.primaryColor }}>Eletrodomésticos e Refrigeração</span>
                   </h1>
                   <p 
                     className="text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-2xl whitespace-pre-line text-center sm:text-left text-muted-foreground"
