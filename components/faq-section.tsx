@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, MessageCircle } from 'lucide-react'
 import { dadosCliente } from '@/data/cliente'
 
 const faqs = [
@@ -49,7 +49,13 @@ export function FAQSection() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-background rounded-3xl">
       <div className="container px-4 mx-auto max-w-3xl">
-        <div className="text-center mb-10 sm:mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center mb-10 sm:mb-12"
+        >
           <span 
             className="text-sm font-semibold uppercase tracking-wider"
             style={{ color: dadosCliente.cores.primaryColor }}
@@ -61,7 +67,7 @@ export function FAQSection() {
           >
             Perguntas que você pode ter
           </h2>
-        </div>
+        </motion.div>
 
         <motion.div
           variants={containerVariants}
@@ -70,45 +76,55 @@ export function FAQSection() {
           viewport={{ once: true, amount: 0.1 }}
           className="space-y-3 sm:space-y-4"
         >
-          {faqs.map((faq, idx) => (
+          {faqs.map((faq, idx) => {
+            const isOpen = openIndex === idx
+            return (
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="rounded-xl overflow-hidden border"
+              className="rounded-xl overflow-hidden border transition-colors duration-300"
               style={{
-                borderColor: dadosCliente.cores.neutralMedium,
+                borderColor: isOpen
+                  ? `${dadosCliente.cores.primaryColor}55`
+                  : dadosCliente.cores.neutralMedium,
               }}
             >
               <button
-                onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                className="w-full flex items-center justify-between p-4 sm:p-5 bg-card hover:opacity-80 transition-opacity text-left"
+                onClick={() => setOpenIndex(isOpen ? null : idx)}
+                aria-expanded={isOpen}
+                className="w-full flex items-center justify-between gap-3 p-4 sm:p-5 bg-card hover:bg-muted/30 transition-colors duration-300 text-left"
               >
                 <span className="font-semibold text-foreground text-sm sm:text-base">
                   {faq.pergunta}
                 </span>
                 <motion.div
-                  animate={{ rotate: openIndex === idx ? 180 : 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="flex-shrink-0 ml-3"
+                  animate={{ rotate: isOpen ? 180 : 0 }}
+                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                  className="flex-shrink-0 flex items-center justify-center h-8 w-8 rounded-full"
+                  style={{
+                    backgroundColor: isOpen
+                      ? dadosCliente.cores.primaryColor
+                      : `${dadosCliente.cores.primaryColor}14`,
+                  }}
                 >
                   <ChevronDown 
-                    className="h-5 w-5"
-                    style={{ color: dadosCliente.cores.primaryColor }}
+                    className="h-5 w-5 transition-colors duration-300"
+                    style={{ color: isOpen ? '#FFFFFF' : dadosCliente.cores.primaryColor }}
                   />
                 </motion.div>
               </button>
 
-              <AnimatePresence>
-                {openIndex === idx && (
+              <AnimatePresence initial={false}>
+                {isOpen && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                     className="overflow-hidden"
                   >
                     <div 
-                      className="p-4 sm:p-5 text-sm sm:text-base text-muted-foreground leading-relaxed"
+                      className="p-4 sm:p-5 text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line"
                       style={{
                         backgroundColor: `${dadosCliente.cores.primaryColor}08`,
                         borderTop: `1px solid ${dadosCliente.cores.neutralMedium}`,
@@ -120,7 +136,8 @@ export function FAQSection() {
                 )}
               </AnimatePresence>
             </motion.div>
-          ))}
+            )
+          })}
         </motion.div>
 
         <motion.div
@@ -133,15 +150,19 @@ export function FAQSection() {
           <p className="text-muted-foreground mb-4">
             Não encontrou sua dúvida?
           </p>
-          <a
+          <motion.a
             href={dadosCliente.contato.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 font-semibold rounded-full text-white text-sm sm:text-base hover:opacity-90 transition-opacity"
+            whileHover={{ scale: 1.04, y: -2 }}
+            whileTap={{ scale: 0.96 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+            className="btn-shine inline-flex items-center gap-2 px-6 py-3 font-semibold rounded-full text-white text-sm sm:text-base shadow-lg hover:shadow-xl transition-shadow"
             style={{ backgroundColor: dadosCliente.cores.primaryColor }}
           >
+            <MessageCircle className="h-5 w-5" strokeWidth={2} />
             Fale conosco no WhatsApp
-          </a>
+          </motion.a>
         </motion.div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
+import { MotionConfig } from "framer-motion"
 import { dadosCliente } from "@/data/cliente"
 
 export function ClienteProvider({ children }: { children: React.ReactNode }) {
@@ -11,5 +12,7 @@ export function ClienteProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.style.setProperty("--accent-color", dadosCliente.cores.accentColor)
   }, [])
 
-  return <>{children}</>
+  // reducedMotion="user" faz o Framer Motion respeitar a preferência
+  // de acessibilidade prefers-reduced-motion em todas as animações
+  return <MotionConfig reducedMotion="user">{children}</MotionConfig>
 }
