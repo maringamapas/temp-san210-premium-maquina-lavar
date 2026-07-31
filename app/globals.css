@@ -213,3 +213,129 @@ html {
 .group.cursor-pointer:hover::after {
   opacity: 1;
 }
+
+/* ===================================================================
+   PREMIUM UI UTILITIES
+   =================================================================== */
+
+/* Accessible focus ring for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--background), 0 0 0 5px var(--ring);
+  border-radius: inherit;
+}
+
+/* Soft premium elevation for cards */
+.card-premium {
+  position: relative;
+  background: var(--card);
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 8px 24px -12px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-premium:hover {
+  border-color: color-mix(in srgb, var(--primary) 45%, transparent);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 24px 48px -16px color-mix(in srgb, var(--primary) 35%, transparent);
+}
+
+/* Glassmorphism surface */
+.glass {
+  background: color-mix(in srgb, var(--card) 70%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
+}
+
+/* Premium gradient button with animated shine sweep */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-shine::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.28) 50%,
+    transparent 100%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-shine:hover::before {
+  transform: translateX(120%);
+}
+
+/* Subtle top highlight line on cards */
+.card-topline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--primary) 60%, transparent),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card-topline:hover::before {
+  opacity: 1;
+}
+
+/* Animated icon halo */
+.icon-halo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.4s ease;
+}
+
+.group:hover .icon-halo {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+/* ===================================================================
+   ACCESSIBILITY: respect prefers-reduced-motion
+   =================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .btn-shine::before {
+    display: none;
+  }
+}

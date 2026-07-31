@@ -145,21 +145,19 @@ export function ServicesGrid() {
             <motion.div
               key={service.id}
               variants={itemVariants}
-              whileHover={{ scale: 1.03, y: -6 }}
+              whileHover={{ y: -6 }}
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-              className="relative overflow-hidden rounded-2xl flex flex-col gap-4 p-6 sm:p-8 bg-card group cursor-pointer"
-              style={{
-                border: `1px solid ${dadosCliente.cores.neutralMedium}`,
-              }}
-              style={{
-                border: `1px solid ${dadosCliente.cores.neutralMedium}`,
-              }}
+              className="card-premium card-topline relative overflow-hidden rounded-2xl flex flex-col gap-4 p-6 sm:p-8 group cursor-pointer"
             >
               {/* Icon and Title */}
               <div className="flex items-center gap-4">
                 <div
-                  className="flex-shrink-0"
-                  style={{ color: dadosCliente.cores.primaryColor }}
+                  className="icon-halo flex-shrink-0 h-14 w-14"
+                  style={{
+                    color: dadosCliente.cores.primaryColor,
+                    backgroundColor: `${dadosCliente.cores.primaryColor}12`,
+                    border: `1px solid ${dadosCliente.cores.primaryColor}22`,
+                  }}
                 >
                   {service.icon}
                 </div>
@@ -174,11 +172,13 @@ export function ServicesGrid() {
               </p>
 
               {/* CTA Button */}
-              <a
+              <motion.a
                 href={buildWhatsappLink(service.title)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 w-full flex items-center justify-center gap-2 px-5 py-3.5 font-semibold rounded-xl transition-all hover:opacity-90 hover:shadow-lg"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+                className="btn-shine mt-2 w-full flex items-center justify-center gap-2 px-5 py-3.5 font-semibold rounded-xl shadow-md hover:shadow-xl transition-shadow"
                 style={{
                   backgroundColor: dadosCliente.cores.primaryColor,
                   color: '#FFFFFF',
@@ -186,7 +186,7 @@ export function ServicesGrid() {
               >
                 <MessageCircle className="w-5 h-5" strokeWidth={2} />
                 Solicitar Orçamento
-              </a>
+              </motion.a>
             </motion.div>
           ))}
         </motion.div>

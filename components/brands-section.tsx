@@ -22,7 +22,13 @@ export function BrandsSection() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-card rounded-3xl">
       <div className="container px-4 mx-auto max-w-7xl">
-        <div className="text-center mb-10 sm:mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center mb-10 sm:mb-12"
+        >
           <span 
             className="text-sm font-semibold uppercase tracking-wider"
             style={{ color: dadosCliente.cores.primaryColor }}
@@ -34,7 +40,7 @@ export function BrandsSection() {
           >
             Expertise em todas as principais marcas
           </h2>
-        </div>
+        </motion.div>
 
         <motion.div
           variants={containerVariants}
@@ -47,14 +53,15 @@ export function BrandsSection() {
             <motion.div
               key={idx}
               variants={itemVariants}
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center justify-center p-4 sm:p-6 rounded-xl"
+              whileHover={{ scale: 1.05, y: -4 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 18 }}
+              className="group flex items-center justify-center p-4 sm:p-6 rounded-xl transition-shadow duration-300 hover:shadow-lg"
               style={{
                 backgroundColor: `${dadosCliente.cores.primaryColor}08`,
                 border: `1px solid ${dadosCliente.cores.primaryColor}20`,
               }}
             >
-              <span className="font-semibold text-sm sm:text-base text-foreground text-center">
+              <span className="font-semibold text-sm sm:text-base text-muted-foreground text-center transition-colors duration-300 group-hover:text-foreground">
                 {marca}
               </span>
             </motion.div>
