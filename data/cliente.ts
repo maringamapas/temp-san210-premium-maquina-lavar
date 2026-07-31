@@ -47,8 +47,8 @@ export const dadosCliente = {
 
   // Conteúdo legado (mantido para compatibilidade)
   conteudo: {
-    tituloPrincipal: "Souza Manutenção",
-    subtitulo: "Especialistas em conserto e manutenção em Maringá e região, com atendimento em domicílio, peças originais e garantia em todos os serviços.",
+    tituloPrincipal: "Especialistas em Eletrodomésticos e Refrigeração",
+    subtitulo: "Conserto e manutenção em Maringá e região, com atendimento em domicílio, peças originais e garantia em todos os serviços.",
     sobreNos:
       "A Souza Manutenção atua desde 2015 oferecendo serviços profissionais de conserto e manutenção de equipamentos diversos.\nSomos especialistas em máquinas de lavar, fornos elétricos, refrigeração e outros equipamentos domésticos e comerciais.\nAtendemos residências, comércios e indústrias em Maringá e região, com peças originais, técnicos certificados e garantia de serviço.",
   },
@@ -86,7 +86,7 @@ export const dadosCliente = {
   recursos: [
     {
       titulo: "Atendimento Rápido",
-      descricao: "Agendamento ágil em Cuiabá e região.",
+      descricao: "Agendamento ágil em Maringá e região.",
     },
     {
       titulo: "Todas as Marcas",
