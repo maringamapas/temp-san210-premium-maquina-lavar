@@ -2,7 +2,6 @@
 import Image from "next/image"
 import FooterCTA from "@/components/footer-cta"
 import { ServicesGrid } from "@/components/services-grid"
-import { ServicesStrip } from "@/components/services-strip"
 import { BrandsSection } from "@/components/brands-section"
 import { FAQSection } from "@/components/faq-section"
 import { motion } from "framer-motion"
@@ -34,8 +33,8 @@ const Page = () => {
                   className="flex justify-center sm:justify-start"
                 >
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-sos-300x150-v6YVSrckGBELDRR7KZXk0Mnh0cU9tz.png"
-                    alt="Logo SOS Assistência Técnica e Refrigeração"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-maquina-lavar-jU0Qr9LPaOzAByUhDt1k0uqYScnzTX.png"
+                    alt="Logo Máquina de Lavar"
                     className="w-48 sm:w-56 h-auto drop-shadow-lg"
                   />
                 </motion.div>
@@ -170,9 +169,6 @@ const Page = () => {
             </div>
           </div>
         </section>
-
-        {/* Services Strip - transição entre Hero e Serviços */}
-        <ServicesStrip />
 
         {/* Services Grid Section */}
         <ServicesGrid />
