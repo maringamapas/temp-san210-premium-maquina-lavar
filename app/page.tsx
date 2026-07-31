@@ -33,8 +33,8 @@ const Page = () => {
                   className="flex justify-center sm:justify-start"
                 >
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-souza-aDa20Oubeu6SBOQ7v7730OkGXehjoG.png"
-                    alt="Logo Souza Manutenção"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-maquina-lavar-jU0Qr9LPaOzAByUhDt1k0uqYScnzTX.png"
+                    alt="Logo Máquina de Lavar"
                     className="w-48 sm:w-56 h-auto drop-shadow-lg"
                   />
                 </motion.div>
