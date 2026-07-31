@@ -152,11 +152,9 @@ export function ServicesGrid() {
               {/* Icon and Title */}
               <div className="flex items-center gap-4">
                 <div
-                  className="icon-halo flex-shrink-0 h-14 w-14"
+                  className="flex-shrink-0"
                   style={{
                     color: dadosCliente.cores.primaryColor,
-                    backgroundColor: `${dadosCliente.cores.primaryColor}12`,
-                    border: `1px solid ${dadosCliente.cores.primaryColor}22`,
                   }}
                 >
                   {service.icon}
