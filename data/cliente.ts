@@ -14,43 +14,43 @@ export const dadosCliente = {
 
   // Informações do cliente
   client: {
-    name: "SOS Assistência Técnica e Refrigeração",
+    name: "Souza Manutenção",
     founded: 2015,
-    whatsappNumber: "65996333131",
-    address: "Av. Carmindo de Campos, 1290 - Campo Velho, Cuiabá - MT, 78065-310",
-    serviceArea: "Cuiabá e região.",
+    whatsappNumber: "5544999324635",
+    address: "Rua Deodoro da Fonseca, s/n - Zona Norte - Maringá - PR, CEP: 87.100-0000",
+    serviceArea: "Maringá e região.",
   },
 
   // Informações de contato
   contato: {
-    whatsappNumber: "556599633131",
-    whatsappLink: "https://wa.me/556599633131?text=Olá! Vim do site e gostaria de um orçamento para reparo.",
+    whatsappNumber: "5544999324635",
+    whatsappLink: "https://wa.me/5544999324635?text=Olá! Vim do site e gostaria de um orçamento para reparo.",
     instagram: "https://instagram.com",
     email: "",
-    endereco: "Av. Carmindo de Campos, 1290 - Campo Velho, Cuiabá - MT, 78065-310",
-    telefone: "(65) 99633-3131",
+    endereco: "Rua Deodoro da Fonseca, s/n - Zona Norte - Maringá - PR, CEP: 87.100-0000",
+    telefone: "(44) 99932-4635",
   },
 
   // Localização geográfica para metatags
   localizacao: {
-    cidade: "Cuiabá",
-    estado: "MT",
-    latitude: "-15.5939",
-    longitude: "-56.0912",
+    cidade: "Maringá",
+    estado: "PR",
+    latitude: "-23.4262",
+    longitude: "-51.4325",
   },
 
   // Conteúdo principal (Hero)
   hero: {
-    title: "SOS Assistência Técnica e Refrigeração",
-    subtitle: "Especialistas em refrigeração em Cuiabá e região\nGeladeiras • Câmaras Frias • Freezers • Cervejeiras\nAtendimento em domicílio - Peças originais - Garantia no serviço.",
+    title: "Souza Manutenção",
+    subtitle: "Especialistas em manutenção e reparo em Maringá e região\nMáquinas de Lavar • Fornos Elétricos • Refrigeração • Diversos\nAtendimento em domicílio - Peças originais - Garantia no serviço.",
   },
 
   // Conteúdo legado (mantido para compatibilidade)
   conteudo: {
-    tituloPrincipal: "SOS Assistência Técnica e Refrigeração",
-    subtitulo: "Especialistas em conserto de refrigeração em Cuiabá e região, com atendimento em domicílio, peças originais e garantia em todos os serviços.",
+    tituloPrincipal: "Souza Manutenção",
+    subtitulo: "Especialistas em conserto e manutenção em Maringá e região, com atendimento em domicílio, peças originais e garantia em todos os serviços.",
     sobreNos:
-      "A SOS Assistência Técnica e Refrigeração atua desde 2015 oferecendo serviços profissionais de conserto e manutenção de equipamentos frigoríficos.\nSomos especialistas em geladeiras, câmaras frias, freezers e cervejeiras de todas as marcas.\nAtendemos residências, comércios e indústrias em Cuiabá e região, com peças originais, técnicos certificados e garantia de serviço.",
+      "A Souza Manutenção atua desde 2015 oferecendo serviços profissionais de conserto e manutenção de equipamentos diversos.\nSomos especialistas em máquinas de lavar, fornos elétricos, refrigeração e outros equipamentos domésticos e comerciais.\nAtendemos residências, comércios e indústrias em Maringá e região, com peças originais, técnicos certificados e garantia de serviço.",
   },
 
   // Serviços oferecidos (exibidos no Hero - 4 principais)
@@ -116,26 +116,26 @@ export const dadosCliente = {
       nome: "Fernanda Costa",
       cargo: "Gerente de Supermercado",
       imagem: "/fernanda-supermercado.png",
-      texto: "Os freezers do nosso supermercado apresentavam falhas recorrentes.\nTécnico profissional diagnosticou e resolveu o problema com garantia.\nTrabalho de qualidade excelente e atendimento muito atencioso.\nEquipamentos funcionando como novos há vários meses!",
+      texto: "A máquina de lavar do nosso supermercado apresentava falhas recorrentes.\nTécnico profissional diagnosticou e resolveu o problema com garantia.\nTrabalho de qualidade excelente e atendimento muito atencioso.\nEquipamentos funcionando como novos há vários meses!",
       avaliacao: 5,
     },
     {
       id: 3,
-      nome: "Julio Mendes",
-      cargo: "Proprietário de Restaurante",
-      imagem: "/julio-restaurante.png",
-      texto: "A cervejeira do meu restaurante apresentou problemas no compressor.\nTécnico chegou rápido, diagnosticou e trocou a peça com garantia de serviço.\nEconomizei bastante e o equipamento voltou ao perfeito funcionamento.\nServiço confiável e de qualidade garantida!",
+      nome: "Claudia L. Lao",
+      cargo: "Proprietária de Restaurante",
+      imagem: "/claudia-restaurante.png",
+      texto: "O forno elétrico do meu restaurante apresentou problemas no termostato.\nTécnico chegou rápido, diagnosticou e trocou a peça com garantia de serviço.\nEconomizei bastante e o equipamento voltou ao perfeito funcionamento.\nServiço confiável e de qualidade garantida!",
       avaliacao: 5,
     },
   ],
 
   // Metadados SEO
   seo: {
-    siteTitle: "SOS Assistência Técnica e Refrigeração | Conserto de Geladeiras, Câmaras Frias e Freezers | Cuiabá | (65) 99633-3131",
+    siteTitle: "Souza Manutenção | Conserto de Máquinas de Lavar e Fornos Elétricos | Maringá | (44) 99932-4635",
     description:
-      "Conserto especializado em geladeiras, câmaras frias, freezers e cervejeiras em Cuiabá. Visita em domicílio no mesmo dia, peças originais e garantia. Técnicos certificados. Ligue: (65) 99633-3131",
-    url: "https://sos-refrigeracao-cuiaba.vercel.app",
+      "Conserto especializado em máquinas de lavar, fornos elétricos e equipamentos diversos em Maringá. Visita em domicílio no mesmo dia, peças originais e garantia. Técnicos certificados. Ligue: (44) 99932-4635",
+    url: "https://souza-manutencao.vercel.app",
     ogImage: "/og-image.jpg",
-    ogImageAlt: "SOS Assistência Técnica e Refrigeração - Conserto de Equipamentos Frigoríficos",
+    ogImageAlt: "Souza Manutenção - Conserto de Máquinas de Lavar e Equipamentos Diversos",
   },
 }
