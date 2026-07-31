@@ -23,8 +23,8 @@ const Page = () => {
           <div className="container px-3 sm:px-4 mx-auto max-w-7xl w-full">
             <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-3 sm:gap-6 lg:gap-12 items-start lg:items-center">
             {/* Left Column - Content */}
-            <div className="flex flex-col gap-3 sm:gap-5 lg:gap-8">
-              <div className="space-y-1.5 sm:space-y-3">
+            <div className="flex flex-col gap-1.5 sm:gap-5 lg:gap-8">
+              <div className="space-y-1 sm:space-y-3">
                 {/* Hero Logo - SOS Assistência Técnica */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -35,18 +35,18 @@ const Page = () => {
                   <img
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-maquina-lavar-jU0Qr9LPaOzAByUhDt1k0uqYScnzTX.png"
                     alt="Logo Máquina de Lavar"
-                    className="w-48 sm:w-56 h-auto drop-shadow-lg"
+                    className="w-32 sm:w-48 lg:w-56 h-auto drop-shadow-lg"
                   />
                 </motion.div>
 
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <h1 
-                    className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight max-w-2xl text-center sm:text-left text-foreground tracking-tight"
+                    className="text-xl sm:text-3xl lg:text-4xl font-bold leading-tight max-w-2xl text-center sm:text-left text-foreground tracking-tight"
                   >
                     Especialistas em <span style={{ color: dadosCliente.cores.primaryColor }}>Eletrodomésticos e Refrigeração</span>
                   </h1>
                   <p 
-                    className="text-base sm:text-lg lg:text-xl font-medium leading-relaxed max-w-2xl whitespace-pre-line text-center sm:text-left text-muted-foreground"
+                    className="text-sm sm:text-lg lg:text-xl font-medium leading-relaxed max-w-2xl whitespace-pre-line text-center sm:text-left text-muted-foreground"
                   >
                     {dadosCliente.conteudo.subtitulo}
                   </p>
@@ -82,16 +82,16 @@ const Page = () => {
               </div>
 
               {/* Technician Image - Mobile Only */}
-              <div className="sm:hidden flex justify-center py-1 -mx-3 px-3">
+              <div className="sm:hidden flex justify-center py-0 -mx-3 px-3">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/maquina-lavar-mobile-800x1200_1_-aH1g5jmSMUaHjkR0xGuADEQn5ocgJb.webp"
                   alt="Técnico especializado com máquina de lavar e caixa de ferramentas"
-                  className="w-full max-w-[180px] h-auto object-contain"
+                  className="w-full max-w-[120px] h-auto object-contain"
                 />
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-4 w-full pt-2 sm:pt-6">
+              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-4 w-full pt-1 sm:pt-6">
                 <motion.a
                   href={dadosCliente.contato.whatsappLink}
                   target="_blank"
