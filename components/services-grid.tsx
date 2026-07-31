@@ -174,9 +174,12 @@ export function ServicesGrid() {
                 href={buildWhatsappLink(service.title)}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ 
+                  scale: 1.02,
+                  boxShadow: `0 0 0 2px ${dadosCliente.cores.accentColor}`,
+                }}
                 whileTap={{ scale: 0.97 }}
-                className="btn-shine mt-2 w-full flex items-center justify-center gap-2 px-5 py-3.5 font-semibold rounded-xl shadow-md hover:shadow-xl transition-shadow"
+                className="btn-shine mt-2 w-full flex items-center justify-center gap-2 px-5 py-3.5 font-semibold rounded-xl shadow-md hover:shadow-xl transition-all"
                 style={{
                   backgroundColor: dadosCliente.cores.primaryColor,
                   color: '#FFFFFF',
