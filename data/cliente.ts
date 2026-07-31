@@ -86,7 +86,7 @@ export const dadosCliente = {
   recursos: [
     {
       titulo: "Atendimento Rápido",
-      descricao: "Agendamento ágil em Cuiabá e região.",
+      descricao: "Agendamento ágil em Maringá e região.",
     },
     {
       titulo: "Todas as Marcas",

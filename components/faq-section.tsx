@@ -8,23 +8,23 @@ import { dadosCliente } from '@/data/cliente'
 const faqs = [
   {
     pergunta: 'Qual é o tempo de atendimento?',
-    resposta: 'Oferecemos diagnóstico e orçamento no mesmo dia. O agendamento pode ser feito via WhatsApp com atendimento ágil em Cuiabá e região.',
+    resposta: 'Oferecemos diagnóstico e orçamento no mesmo dia.\nO agendamento pode ser feito via WhatsApp com atendimento ágil em Maringá e região.',
   },
   {
     pergunta: 'Vocês trabalham com todas as marcas?',
-    resposta: 'Sim, atendemos refrigeradores, freezers e câmaras frias de todas as marcas principais como Brastemp, Consul, Electrolux, Metalfrio e mais.',
+    resposta: 'Sim, atendemos refrigeradores, freezers e câmaras frias de todas as marcas principais como Brastemp, Consul, Electrolux, Metalfrio e mais.\n',
   },
   {
     pergunta: 'Qual é a garantia do serviço?',
-    resposta: 'Todos os nossos serviços incluem garantia. Utilizamos peças originais certificadas para garantir qualidade e durabilidade.',
+    resposta: 'Todos os nossos serviços incluem garantia.\nUtilizamos peças originais certificadas para garantir qualidade e durabilidade.',
   },
   {
     pergunta: 'Como solicitar um orçamento?',
-    resposta: 'É simples! Clique no botão WhatsApp, descreva seu problema e um técnico especializado entrará em contato para agendar a visita.',
+    resposta: 'É simples!\nClique no botão WhatsApp, descreva seu problema e um técnico especializado entrará em contato para agendar a visita.',
   },
   {
     pergunta: 'Qual é o valor do diagnóstico?',
-    resposta: 'O diagnóstico técnico é GRÁTIS. Você recebe um orçamento detalhado e transparente, sem qualquer compromisso.',
+    resposta: 'O diagnóstico técnico é GRÁTIS.\nVocê recebe um orçamento detalhado e transparente, sem qualquer compromisso.',
   },
 ]
 
