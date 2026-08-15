@@ -35,8 +35,8 @@ const Page = () => {
                   className="flex justify-center sm:justify-start"
                 >
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-maquina-lavar-jU0Qr9LPaOzAByUhDt1k0uqYScnzTX.png"
-                    alt="Logo Máquina de Lavar"
+                    src="/logo-sua-empresa-ml.svg"
+                    alt="Logo da empresa"
                     className="w-32 sm:w-48 lg:w-56 h-auto drop-shadow-lg"
                   />
                 </motion.div>

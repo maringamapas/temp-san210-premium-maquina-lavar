@@ -17,8 +17,8 @@ export default function Header() {
             className="flex items-center gap-2"
           >
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-sos-300x150-v6YVSrckGBELDRR7KZXk0Mnh0cU9tz.png"
-              alt="Logo SOS"
+              src="/logo-sua-empresa-ml.svg"
+              alt="Logo da empresa"
               className="h-12 sm:h-14 w-auto"
             />
           </motion.div>
