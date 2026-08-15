@@ -111,7 +111,7 @@ export default function FooterCTA() {
           whileHover={{ 
             scale: 1.03,
             y: -3,
-            borderColor: dadosCliente.cores.primaryColor,
+            borderColor: dadosCliente.cores.accentColor,
             transition: { duration: 0.2 }
           }}
           whileTap={{ scale: 0.95 }}
