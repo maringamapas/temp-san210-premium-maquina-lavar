@@ -37,7 +37,7 @@ const Page = () => {
                   <img
                     src="/logo-sua-empresa-ml.svg"
                     alt="Logo da empresa"
-                    className="w-32 sm:w-48 lg:w-56 h-auto drop-shadow-lg"
+                    className="w-full max-w-56 sm:w-48 lg:w-56 h-auto drop-shadow-lg"
                   />
                 </motion.div>
 
