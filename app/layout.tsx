@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="dark">
       {/* Removi as tags manuais do <head> pois o Next.js já as gera via metadata acima */}
-      <body className={`${inter.variable} font-sans antialiased bg-background p-4 sm:p-6 lg:p-8`}>
+      <body className={`${inter.variable} mobile-readable font-sans antialiased bg-background p-4 sm:p-6 lg:p-8`}>
         <ClienteProvider>
           <div className="w-full mx-auto max-w-7xl rounded-3xl overflow-hidden shadow-2xl">
             {children}

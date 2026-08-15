@@ -157,6 +157,28 @@
     min-height: auto;
     background-image: none;
   }
+
+  /* Escala de leitura otimizada para telas pequenas */
+  body.mobile-readable {
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+
+  body.mobile-readable .text-xs {
+    font-size: 0.875rem;
+  }
+
+  body.mobile-readable .text-sm {
+    font-size: 1rem;
+  }
+
+  body.mobile-readable .text-base {
+    font-size: 1.0625rem;
+  }
+
+  body.mobile-readable .text-lg {
+    font-size: 1.1875rem;
+  }
 }
 
 .hero-content {
