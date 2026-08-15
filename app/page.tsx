@@ -46,7 +46,7 @@ const Page = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-xl sm:text-3xl lg:text-4xl font-bold leading-tight max-w-2xl text-center sm:text-left text-foreground tracking-tight text-balance"
+                    className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight max-w-2xl text-center sm:text-left text-foreground tracking-tight text-balance"
                   >
                     Especialistas em <span style={{ color: dadosCliente.cores.primaryColor }}>Eletrodomésticos e Refrigeração</span>
                   </motion.h1>
