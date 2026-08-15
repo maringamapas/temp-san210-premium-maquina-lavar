@@ -127,6 +127,30 @@ export const dadosCliente = {
       texto: "O forno elétrico do meu restaurante apresentou problemas no termostato.\nTécnico chegou rápido, diagnosticou e trocou a peça com garantia de serviço.\nEconomizei bastante e o equipamento voltou ao perfeito funcionamento.\nServiço confiável e de qualidade garantida!",
       avaliacao: 5,
     },
+    {
+      id: 4,
+      nome: "Patricia Costa",
+      cargo: "Moradora de Maringá",
+      imagem: "/patricia-costa.jpg",
+      texto: "Minha máquina de lavar parou de centrifugar e eu precisava resolver com urgência.\nO atendimento foi rápido, o diagnóstico foi explicado com clareza e o reparo ficou perfeito.\nFiquei muito satisfeita com a atenção e a garantia do serviço!",
+      avaliacao: 5,
+    },
+    {
+      id: 5,
+      nome: "Fernanda Silva",
+      cargo: "Proprietária de Padaria",
+      imagem: "/fernanda-silva.jpg",
+      texto: "O freezer da padaria apresentou uma falha inesperada e a equipe resolveu tudo no mesmo dia.\nProfissionais cuidadosos, pontuais e muito honestos no orçamento.\nO equipamento voltou a funcionar perfeitamente!",
+      avaliacao: 5,
+    },
+    {
+      id: 6,
+      nome: "André Santos",
+      cargo: "Morador de Maringá",
+      imagem: "/andre-santos.jpg",
+      texto: "Tive problemas com a geladeira e encontrei um atendimento realmente eficiente.\nO técnico identificou a causa rapidamente e fez o reparo com muita qualidade.\nRecomendo a Souza Manutenção pelo profissionalismo!",
+      avaliacao: 5,
+    },
   ],
 
   // Metadados SEO
